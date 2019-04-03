@@ -1,3 +1,19 @@
 
-<app-sign-up></app-sign-up>
-<app-user-profile><app-/user-profile>
+<ul>
+  <li>
+    <a [routerLink]="['/user']">USER</a>
+  </li>
+  <li>
+    <a [routerLink]="['/signup']">SIGNUP</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
+
+<app-menu></app-menu>
+<!-- <ul>
+    <li [ngClass]="{'vital': isThisMovieGreat}" >Briget Jones's Diary</li>
+    <li appHightLight>Briget Jones Age of reason</li>
+    <li [ngStyle]="{backgroundColor: isThisMovieGreat ? 'red' : 'yellow'}">The Lord of the ring</li>
+    <li>Mulan</li>
+</ul> -->
